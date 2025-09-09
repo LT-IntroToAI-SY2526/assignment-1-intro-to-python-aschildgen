@@ -51,6 +51,17 @@ name = "Alex"
 favoriteNumber = 24
 print("Hello My name is " + name + " and my favorite number is " + str(favoriteNumber) + ".")
 
+
+
+
+
+
+
+
+
+
+
+
 """
 # Problem 2: Temperature Check
 
@@ -69,49 +80,91 @@ temperature = input("Enter the temperature in F: ")
 if int(temperature)<50:
     print("It's cold!")
 
-if int(temperature)>50 & temperature<80:
+if int(temperature)>50 & int(temperature)<80:
     print("Nice weather.")
 
 if int(temperature)>80:
     print("It's Hot")
 
+
+
+
+
+
+
+
+
+
+
 """
-PROBLEM 1: [Problem Title/Description]
-[Copy the complete problem description from your AI assistant]
-
-Example:
-Problem: Write a function called 'is_even' that takes an integer and returns 
-True if the number is even, False if it's odd.
-
-Example inputs/outputs:
-- is_even(4) should return True
-- is_even(7) should return False
-
-
-
-PROBLEM 1: [Problem Title/Description]
-[Copy the complete problem description from your AI assistant]
-
-Example:
-Problem: Write a function called 'is_even' that takes an integer and returns 
-True if the number is even, False if it's odd.
+PROBLEM 3: Print Even Numbers
+Topic: Loops (for loop)
+Instructions:
+Write a program that prints all even numbers from 2 to n 
+(inclusive), where n is a positive integer input.
 
 Example inputs/outputs:
-- is_even(4) should return True
-- is_even(7) should return False
+-Example:
+Input: 10
+Output:
+
+2  
+4  
+6  
+8  
+10
+"""
+highest = input("What number do you need even numbers for? ")
+for i in range(0, int(highest), 2):
+    print(i)
 
 
 
-PROBLEM 1: [Problem Title/Description]
+
+
+
+
+
+
+
+""""
+PROBLEM 4: Factorial Calculator
 [Copy the complete problem description from your AI assistant]
 
-Example:
-Problem: Write a function called 'is_even' that takes an integer and returns 
-True if the number is even, False if it's odd.
+Instructions:
+Write a function factorial(n) that returns the factorial of a 
+non-negative integer n using a while loop. The factorial of 0 is 1.
+
 
 Example inputs/outputs:
-- is_even(4) should return True
-- is_even(7) should return False
+Input: 5
+Output: 120
+"""
+factorial = input("What number do you need the factorial of? ")
+x = 1
+for i in range(int(factorial), 1, -1):
+    x = x*i
+print(x)
+
+
+
+
+
+
+
+
+
+
+"""
+PROBLEM 5: List Average
+Topic: Basic list operations and functions
+Instructions:
+Write a function average(numbers) that takes a list of 
+numbers and returns their average. If the list is empty, return None.
+
+Example:
+Input: [3, 7, 10]
+Output: 6.666666666666667.
 """
 
 
