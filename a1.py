@@ -47,12 +47,8 @@ I have some experience with Java. Can you create 5-7 practice problems that cove
 # Example Output:
 # Hi, my name is Taylor and my favorite number is 42.
 """
-name = "Alex"
-favoriteNumber = 24
-print("Hello My name is " + name + " and my favorite number is " + str(favoriteNumber) + ".")
-
-
-
+def favoriteNumber(name, favoriteNumber):
+    print("Hello My name is " + name + " and my favorite number is " + str(favoriteNumber) + ".")
 
 
 
@@ -76,15 +72,13 @@ print("Hello My name is " + name + " and my favorite number is " + str(favoriteN
 # Enter the temperature: 72
 # Nice weather.
 """
-temperature = input("Enter the temperature in F: ")
-if int(temperature)<50:
-    print("It's cold!")
-
-if int(temperature)>50 & int(temperature)<80:
-    print("Nice weather.")
-
-if int(temperature)>80:
-    print("It's Hot")
+def findTemp(temperature):
+    if int(temperature)<50:
+        print("It's cold!")
+    if int(temperature)>50 & int(temperature)<80:
+        print("Nice weather.")
+    if int(temperature)>80:
+       print("It's Hot")
 
 
 
@@ -114,9 +108,9 @@ Output:
 8  
 10
 """
-highest = input("What number do you need even numbers for? ")
-for i in range(0, int(highest), 2):
-    print(i)
+def findEvens(highest):
+    for i in range(0, int(highest)+1, 2):
+     print(i)
 
 
 
@@ -140,11 +134,11 @@ Example inputs/outputs:
 Input: 5
 Output: 120
 """
-factorial = input("What number do you need the factorial of? ")
-x = 1
-for i in range(int(factorial), 1, -1):
-    x = x*i
-print(x)
+def findFactorial(factorial):
+    x = 1
+    for i in range(int(factorial), 1, -1):
+        x = x*i
+    print(x)
 
 
 
@@ -166,8 +160,12 @@ Example:
 Input: [3, 7, 10]
 Output: 6.666666666666667.
 """
-
-
+def findAverage(nums):
+    SUM = 0
+    for x in nums:
+        SUM+=x
+    SUM = SUM/len(nums)
+    print (SUM)
 
 
 
@@ -195,18 +193,18 @@ print(f"is_even(7): {is_even(7)}")  # Should print False
 """
 
 print("Testing Problem 1:")
-# Add your tests here
+favoriteNumber("Alex", 24)
 
 print("\nTesting Problem 2:")
-# Add your tests here
+findTemp(67)
 
 print("\nTesting Problem 3:")
-# Add your tests here
+findEvens(10)
 
 print("\nTesting Problem 4:")
-# Add your tests here
+findFactorial(5)
 
 print("\nTesting Problem 5:")
-# Add your tests here
+findAverage([6,6,6,7,7,7,67])
 
 
